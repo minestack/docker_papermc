@@ -18,6 +18,6 @@ COPY entrypoint.sh entrypoint.sh
 RUN chown minecraft:nogroup -R . && ls -la
 
 USER minecraft
-ENV USER=container HOME=/home/minecraft
+ENV USER=minecraft HOME=/home/minecraft
 
 ENTRYPOINT [ "./entrypoint.sh" ]
