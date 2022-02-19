@@ -4,7 +4,7 @@ ENV MINECRAFT_VERSION=1.18.1
 ENV PAPERMC_BUILD=197
 
 RUN apt-get update && \
-  apt-get install -y dumb-init curl && \
+  apt-get install -y dumb-init && \
   adduser --system --uid 1000 --disabled-password --home /home/minecraft minecraft
 
 WORKDIR /home/minecraft
